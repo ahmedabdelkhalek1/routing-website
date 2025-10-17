@@ -1,3 +1,0 @@
-FROM kalaksi/tinyproxy
-ENV PORT=10000
-EXPOSE 10000

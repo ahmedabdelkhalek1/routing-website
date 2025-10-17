@@ -1,13 +1,9 @@
-const http = require('http');
-const httpProxy = require('http-proxy');
-
-const proxy = httpProxy.createProxyServer({});
-const server = http.createServer(function(req, res) {
-  // You could put logic here for custom routing or filtering
-  proxy.web(req, res, { target: req.url });
+// index.js
+const ProxyChain = require('proxy-chain');
+const server = new ProxyChain.Server({
+    port: process.env.PORT || 10000,
+    // authentication: { username: 'user', password: 'pass' } // optional
 });
-
-let PORT = process.env.PORT || 8080;
-server.listen(PORT, () => {
-  console.log(`Proxy listening on port ${PORT}`);
+server.listen(() => {
+    console.log('Proxy server is listening');
 });

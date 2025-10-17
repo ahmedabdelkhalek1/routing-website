@@ -1,8 +1,8 @@
 {
-  "name": "my-http-proxy",
+  "name": "routing-website",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "http-proxy": "^1.18.1"
+    "proxy-chain": "^0.7.6"
   }
 }
