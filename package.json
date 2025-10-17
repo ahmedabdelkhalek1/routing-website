@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "proxy-chain": "^0.7.6"
+    "proxy-chain": "^0.5.0"
   }
 }
