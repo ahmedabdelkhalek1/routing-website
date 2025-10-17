@@ -1,8 +1,12 @@
 {
-  "name": "routing-website",
+  "name": "socks5-proxy-server",
   "version": "1.0.0",
+  "description": "Simple Node.js SOCKS5 proxy server",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "socks": "^2.7.1"
+    "socksv5": "^0.0.8"
   }
 }
